@@ -6,4 +6,11 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="fbuild" value="return FutureBuilder(&#10;  future: _future,&#10;  builder: (context, snapshot) {&#10;    return Scaffold(&#10;      appBar: AppBar(&#10;        title: Text($TITLE$),&#10;      ),&#10;      body: snapshot.connectionState == ConnectionState.done&#10;          ? Container()&#10;          : Center(child: CircularProgressIndicator()),&#10;    );&#10;  },&#10;);&#10;" description="future builder widget" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
 </templateSet>
